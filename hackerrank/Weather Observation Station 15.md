@@ -6,6 +6,7 @@ Query the Western Longitude (LONG_W) for the largest Northern Latitude (LAT_N) i
 Input Format
 
 The STATION table is described as follows:
+![image](https://github.com/user-attachments/assets/cecca00a-806e-45d3-9314-40d92c18a13a)
 
 
 # Answer:

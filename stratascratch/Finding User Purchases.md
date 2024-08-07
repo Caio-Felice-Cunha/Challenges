@@ -28,3 +28,5 @@ GROUP BY
     amazon_transactions1.user_id
 ORDER BY 
     amazon_transactions1.user_id```
+
+![image](https://github.com/user-attachments/assets/60f6b4c2-6c3f-4a35-96d5-55d89637fa88)

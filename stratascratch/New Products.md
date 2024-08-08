@@ -39,5 +39,6 @@ WHERE
     net_products IS NOT NULL;
 ```
 
+![image](https://github.com/user-attachments/assets/fc392024-9291-4f2d-9dbf-e374bc838c7a)
 
 

@@ -26,35 +26,36 @@ HINT: to make it simpler, consider that all years have 365 days. You don't need 
 # Answer:
 
 ``` sql
-SELECT 
-    title
-    , budget
-    , CEILING(prorated_expenses) AS prorated_employee_expense
-FROM
-    (SELECT 
-        title
-        , budget
-        , (end_date::date - start_date::date) * (SUM(salary) / 365) AS prorated_expenses
-     FROM 
-        linkedin_projects
-     INNER JOIN 
-        linkedin_emp_projects
-     ON 
-        linkedin_projects.id = linkedin_emp_projects.project_id
-     INNER JOIN 
-        linkedin_employees
-     ON 
-        linkedin_emp_projects.emp_id = linkedin_employees.id
-     GROUP BY 
-        title
-        , budget
-        , end_date
-        , start_date
-    ) AS subquery
-WHERE 
-    prorated_expenses > budget
+SELECT title
+	, budget
+	, CEILING(
+		(DATEDIFF(
+			end_date, start_date) 
+		* 
+			SUM(salary)
+		/
+			365)
+	) AS prorated_employee_expense
+FROM 
+	linkedin_projects
+INNER JOIN 
+	linkedin_emp_projects 
+ON 
+	linkedin_projects.id = linkedin_emp_projects.project_id
+INNER JOIN 
+	linkedin_employees 
+ON 
+	linkedin_emp_projects.emp_id=linkedin_employees.id
+GROUP BY 
+	title
+	, budget
+	, end_date
+	, start_date
+HAVING 
+	prorated_employee_expense > budget
 ORDER BY 
-    title ASC;
+	title ASC
+
 ```
 
 ![image](https://github.com/user-attachments/assets/db5bc4cf-2d97-47fc-955d-8b62cebf9bf5)

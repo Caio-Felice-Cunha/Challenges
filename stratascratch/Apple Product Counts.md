@@ -1,4 +1,4 @@
-## Challenge link:
+## Challenge link: https://platform.stratascratch.com/coding/10141-apple-product-counts?code_type=3
 
 # Challenge: Apple Product Counts
 

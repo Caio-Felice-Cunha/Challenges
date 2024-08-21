@@ -77,31 +77,6 @@ ORDER BY
 5. **`ORDER BY` Clause**:
    - `ORDER BY Apple_Users DESC`: This orders the final results by the number of Apple users in descending order.
 
-### Alternative Solution
-
-The given solution is efficient and solves the problem correctly, but there's a slight variation that could be considered:
-
-```sql
-SELECT 
-    playbook_users.language,
-    COUNT(DISTINCT CASE WHEN 
-        playbook_events.device IN ('macbook pro', 'iphone 5s', 'ipad air')
-        THEN playbook_events.user_id
-    END) AS Apple_Users,
-    COUNT(DISTINCT playbook_events.user_id) AS Total_Users
-FROM 
-    playbook_events
-JOIN 
-    playbook_users ON playbook_events.user_id = playbook_users.user_id
-GROUP BY 
-    playbook_users.language
-ORDER BY 
-    Total_Users DESC;
-```
-
-**Key Difference:**
-- The results are now ordered by `Total_Users` instead of `Apple_Users`. This allows us to see the languages with the most users overall, rather than just those with the most Apple users.
-
 ### Data Analysis and Comments
 
 #### Results Interpretation

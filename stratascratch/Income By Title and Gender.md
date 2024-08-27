@@ -16,7 +16,7 @@ Output the employee title, gender (i.e., sex), along with the average total comp
 SELECT 
     sf_employee.employee_title
     , sf_employee.sex
-    , AVG(sf_employee.salary + Bonus_Empl_Tb.Bonus_Worker) AS Total_Comp
+    , AVG(sf_employee.salary + Bonus_Empl_Tb.Bonus_Worker) AS Avg_Comp
 FROM 
     sf_employee
 INNER JOIN 
@@ -36,7 +36,8 @@ GROUP BY
 
 ### Result:
 
-![image](https://github.com/user-attachments/assets/4fda703e-7870-4107-bcfc-f399beaf81f0)
+![image](https://github.com/user-attachments/assets/41857276-e73f-40bc-886f-bcbed424fdba)
+
 
 ## Explanation:
 Let's break down the SQL code used to solve the challenge of finding the average total compensation by employee title and gender. The challenge involves calculating the total compensation by summing the salary and bonuses of employees. Employees who do not receive a bonus are excluded from the calculation. The final result should display the employee title, gender, and the average total compensation.
@@ -49,12 +50,12 @@ Let's break down the SQL code used to solve the challenge of finding the average
 SELECT 
     sf_employee.employee_title,
     sf_employee.sex,
-    AVG(sf_employee.salary + Bonus_Empl_Tb.Bonus_Worker) AS Total_Comp
+    AVG(sf_employee.salary + Bonus_Empl_Tb.Bonus_Worker) AS Avg_Comp
 ```
 - **`sf_employee.employee_title`**: This column selects the title of each employee from the `sf_employee` table.
 - **`sf_employee.sex`**: This column selects the gender (sex) of each employee from the `sf_employee` table.
 - **`AVG(sf_employee.salary + Bonus_Empl_Tb.Bonus_Worker)`**: This expression calculates the average of the total compensation for employees, which is the sum of the salary and the bonus. The `AVG` function is used to compute the average value of this sum.
-- **`AS Total_Comp`**: This aliases the calculated average total compensation as `Total_Comp` for better readability in the output.
+- **`AS Avg_Comp`**: This aliases the calculated average total compensation as `Avg_Comp` for better readability in the output.
 
 #### 2. **FROM Clause**
 

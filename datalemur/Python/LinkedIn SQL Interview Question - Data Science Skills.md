@@ -12,9 +12,11 @@ There are no duplicates in the candidates table.
 
 
 candidates Table:
+<img width="370" height="133" alt="Screenshot 2026-01-18 162135" src="https://github.com/user-attachments/assets/2b2d1d12-2f17-4da1-9781-60dacc06785d" />
 
 
 candidates Example Input:
+<img width="365" height="349" alt="Screenshot 2026-01-18 162237" src="https://github.com/user-attachments/assets/e8a9abdb-f1c2-422b-abfe-c01bb83f5824" />
 
 
 # Answer:
@@ -35,6 +37,7 @@ ORDER BY
 ``` 
 
 ### Result:
+<img width="183" height="113" alt="Screenshot 2026-01-18 162340" src="https://github.com/user-attachments/assets/54d60b14-9596-4b3e-b0a7-4d53394663c8" />
 
 ## Explanation:
 

@@ -307,8 +307,3 @@ The use of `group_by()` + `mutate()` is particularly powerful here, as it preser
 
 ---
 
-### References
-
-* StrataScratch – *Average Salaries (ID 9917)*
-* Wickham et al., *dplyr: A Grammar of Data Manipulation*, RStudio Documentation
-

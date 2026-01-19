@@ -38,6 +38,10 @@ result <- employee %>%
 
 ### Result:
 
+<img width="2292" height="1312" alt="image" src="https://github.com/user-attachments/assets/adf43a30-4ad3-4098-8571-7af018e1be2e" />
+
+
+
 ## Explanation:
 
 Below I provide a **detailed, step-by-step explanation** of the solution, a **line-by-line breakdown of the code**, a **data analysis of the results**, and a **final commentary with an alternative analytical approach**.

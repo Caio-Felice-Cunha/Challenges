@@ -36,11 +36,11 @@ The second line contains the space separated list of all the shoe sizes in the s
 The third line contains N, the number of customers.
 The next N lines contain the space separated values of the shoe size desired by the customer and Xi, the price of the shoe.
 
-Constraints
-0 < X < 10³
-0 < N <= 30³
-20 < Xi < 100
-2 < shoe size < 20
+Constraints:
+* 0 < X < 10³
+* 0 < N <= 30³
+* 20 < Xi < 100
+* 2 < shoe size < 20
 
 Output Format
 
@@ -109,6 +109,9 @@ print(Total_revenue)
 ``` 
 
 ### Result:
+
+<img width="686" height="498" alt="image" src="https://github.com/user-attachments/assets/321059da-0cbe-4061-9866-39584e1a97c2" />
+
 
 ## Explanation:
 

@@ -11,7 +11,7 @@ Assumption:
 There are no duplicates in the candidates table.
 candidates Table:
 
-
+![alt text](image.png)
 
 # Answer:
 

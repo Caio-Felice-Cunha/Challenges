@@ -51,7 +51,7 @@ Note: The string S has at least E distinct characters.
 
 # Answer:
 
-``` sql
+``` python
 #!/bin/python3
 
 import math

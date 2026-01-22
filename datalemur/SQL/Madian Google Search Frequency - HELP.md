@@ -9,6 +9,7 @@ However, at Google scale, querying the 2 trillion searches is too costly. Luckil
 Write a query to report the median of searches made by a user. Round the median to one decimal point.
 
 
+<img width="381" height="579" alt="Screenshot 2026-01-22 075115" src="https://github.com/user-attachments/assets/f20ba24e-9a88-430f-9237-ece3e576540f" />
 
 
 # Answer:

@@ -39,6 +39,8 @@ ON
 ```
 ![image](https://github.com/user-attachments/assets/5e8ac18e-5766-421b-92dc-531b3f91419c)
 
+> Caveat on the denominator: this query divides by `COUNT(texts.email_id)`, which counts text-message rows, not the distinct users defined in the emails table. The problem states a user may receive multiple texts until confirmed, and the rate is defined over users in the emails table. It passes the platform's test data because the rows are effectively 1:1, but with multiple texts per user (or email users with no text) the result deviates from the definition. The official DataLemur solution uses a LEFT JOIN keyed on the emails table. The "Alternative Solution" below (LEFT JOIN with `COUNT(DISTINCT ...)`) matches that definition and is the more robust answer.
+
 
 ## Explanation:
 To solve the **Signup Activation Rate** challenge, let's break down the provided solution and discuss how it calculates the activation rate. Additionally, I’ll propose an alternative solution for comparison.

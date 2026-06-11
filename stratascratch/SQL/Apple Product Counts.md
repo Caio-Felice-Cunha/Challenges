@@ -55,7 +55,7 @@ JOIN
 GROUP BY 
     playbook_users.language
 ORDER BY 
-    Apple_Users DESC;
+    Total_Users DESC;
 ```
 
 #### Step-by-Step Breakdown
@@ -75,7 +75,7 @@ ORDER BY
    - `GROUP BY playbook_users.language`: This groups the results by the language of the users.
 
 5. **`ORDER BY` Clause**:
-   - `ORDER BY Apple_Users DESC`: This orders the final results by the number of Apple users in descending order.
+   - `ORDER BY Total_Users DESC`: This orders the final results by the total number of users in descending order, as the problem requires.
 
 ### Data Analysis and Comments
 

@@ -54,25 +54,17 @@ Note: The string S has at least E distinct characters.
 ``` python
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
-
-
+from collections import Counter
 
 if __name__ == "__main__":
     s = input().strip()
-    
-    # Count frequencies
-    freq = {}
-    for c in s:
-        freq[c] = freq.get(c, 0) + 1
-    
+
+    # Count frequency of each character
+    freq = Counter(s)
+
     # Sort by descending frequency, then ascending character
     sorted_items = sorted(freq.items(), key=lambda x: (-x[1], x[0]))
-    
+
     # Print top 3
     for char, count in sorted_items[:3]:
         print(char, count)
@@ -212,7 +204,7 @@ In terms of computational performance:
 * Counting frequencies is **O(n)** for string length `n`
 * Sorting is **O(k log k)** where `k` is number of distinct characters (at most 26 for lowercase English letters).
 
-So the combination remains efficient even for the maximum constraint of 10,000 characters.([GoLinuxCloud][5])
+So the combination remains efficient even for the maximum constraint of 10,000 characters.
 
 ---
 

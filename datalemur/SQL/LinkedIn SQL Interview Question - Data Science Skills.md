@@ -41,10 +41,6 @@ ORDER BY
 
 ## Explanation:
 
-Below is the same analysis rewritten **entirely in the first person**, while preserving a **technical, factual, and hyper-informative style**.
-
----
-
 ## 1. Problem Restatement (How I Interpret the Challenge)
 
 I am given a relational table called `candidates` where:

@@ -38,7 +38,7 @@ The next N lines contain the space separated values of the shoe size desired by 
 
 Constraints:
 * 0 < X < 10³
-* 0 < N <= 30³
+* 0 < N <= 10³
 * 20 < Xi < 100
 * 2 < shoe size < 20
 
@@ -75,8 +75,6 @@ Customer 6: Size 10 not available, so no purchase.
 
 Total money earned = 55 + 45 + 40 + 60 = 200
 
-
-Output Format
 
 # Answer:
 
